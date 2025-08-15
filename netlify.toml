@@ -1,6 +1,4 @@
-# Build and deploy
-npm run build
-
+[build]
 # Specify the publish directory
 publish = "dist"
 
