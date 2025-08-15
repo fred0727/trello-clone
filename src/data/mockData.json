@@ -1,0 +1,94 @@
+{
+  "boards": [
+    {
+      "id": "board-1",
+      "title": "Proyecto Desarrollo Web",
+      "lists": [
+        {
+          "id": "list-1",
+          "title": "📋 Backlog",
+          "cards": [
+            {
+              "id": "card-1",
+              "title": "Diseñar wireframes",
+              "description": "Crear wireframes para todas las páginas principales del sitio web, incluyendo homepage, dashboard de usuario, y páginas de producto."
+            },
+            {
+              "id": "card-2",
+              "title": "Configurar base de datos",
+              "description": "Instalar y configurar PostgreSQL para el proyecto. Definir esquemas iniciales y relaciones entre tablas."
+            },
+            {
+              "id": "card-3",
+              "title": "Implementar autenticación",
+              "description": "Crear sistema de login y registro de usuarios con JWT tokens. Incluir recuperación de contraseña y verificación por email."
+            },
+            {
+              "id": "card-4",
+              "title": "Optimizar SEO",
+              "description": "Implementar meta tags dinámicos, sitemap XML, robots.txt y estructura de URLs amigables para buscadores."
+            }
+          ]
+        },
+        {
+          "id": "list-2",
+          "title": "🚧 En Progreso",
+          "cards": [
+            {
+              "id": "card-5",
+              "title": "Desarrollar API REST",
+              "description": "Crear endpoints para gestión de usuarios, productos y pedidos. Implementar middlewares de autenticación y validación."
+            },
+            {
+              "id": "card-6",
+              "title": "Diseñar interfaz de usuario",
+              "description": "Implementar componentes React con TailwindCSS siguiendo el design system establecido. Crear componentes reutilizables."
+            },
+            {
+              "id": "card-7",
+              "title": "Integrar sistema de pagos",
+              "description": "Conectar con Stripe API para procesamiento de pagos. Implementar webhooks para confirmación de transacciones."
+            }
+          ]
+        },
+        {
+          "id": "list-3",
+          "title": "🔍 En Revisión",
+          "cards": [
+            {
+              "id": "card-8",
+              "title": "Testing unitario",
+              "description": "Escribir tests para los componentes principales usando Jest y React Testing Library. Alcanzar 80% de cobertura."
+            },
+            {
+              "id": "card-9",
+              "title": "Documentación API",
+              "description": "Crear documentación completa de la API usando Swagger/OpenAPI. Incluir ejemplos de uso y códigos de respuesta."
+            }
+          ]
+        },
+        {
+          "id": "list-4",
+          "title": "✅ Completado",
+          "cards": [
+            {
+              "id": "card-10",
+              "title": "Configurar proyecto",
+              "description": "Inicializar proyecto React con Vite y TailwindCSS. Configurar estructura de carpetas y herramientas de desarrollo."
+            },
+            {
+              "id": "card-11",
+              "title": "Documentación inicial",
+              "description": "Crear README completo con instrucciones de instalación, arquitectura del proyecto y guías de contribución."
+            },
+            {
+              "id": "card-12",
+              "title": "Setup CI/CD",
+              "description": "Configurar pipeline de GitHub Actions para testing automático, linting y deployment a producción."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

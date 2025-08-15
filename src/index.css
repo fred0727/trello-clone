@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados */
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen;
+  }
+}
+
+@layer components {
+  /* Estilos para el scroll personalizado */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(156, 163, 175, 0.5);
+    border-radius: 3px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 163, 175, 0.7);
+  }
+
+  /* Animaciones para drag and drop */
+  .dragging {
+    @apply transform rotate-3 scale-105 opacity-90 shadow-2xl;
+    transition: all 0.2s ease-out;
+    z-index: 9999 !important;
+  }
+
+  .drag-over {
+    @apply bg-blue-50 border-blue-300;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Animaciones de entrada */
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .slide-in {
+    animation: slideIn 0.3s ease-out;
+  }
+
+  /* Efectos hover para tarjetas */
+  .card-hover {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .card-hover:hover {
+    @apply shadow-card-hover transform -translate-y-1;
+  }
+
+  /* Estilos para los botones de acción */
+  .action-button {
+    @apply opacity-0 group-hover:opacity-100 transition-opacity duration-200;
+  }
+}
+
+/* Keyframes personalizados */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Estilos específicos para react-beautiful-dnd */
+.react-beautiful-dnd-dragging {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  transform: rotate(2deg) !important;
+  z-index: 9999 !important;
+}
+
+.react-beautiful-dnd-drag-handle {
+  cursor: grab !important;
+}
+
+.react-beautiful-dnd-drag-handle:active {
+  cursor: grabbing !important;
+}
+
+/* Corregir problemas de z-index con react-beautiful-dnd */
+[data-rbd-drag-handle-draggable-id] {
+  cursor: grab !important;
+}
+
+[data-rbd-drag-handle-draggable-id]:active {
+  cursor: grabbing !important;
+}
+
+/* Estilos adicionales para mejorar el drag */
+.rbd-drag-handle {
+  cursor: grab;
+}
+
+.rbd-drag-handle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.rbd-drag-handle:active {
+  cursor: grabbing;
+}
